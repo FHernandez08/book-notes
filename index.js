@@ -28,7 +28,13 @@ app.get("/", (req, res) => {
     res.render("index");
 });
 
+app.get("/add-book", (req, res) => {
+    res.render("form");
+});
 
+app.get("success", (req, res) => {
+    res.render("success");
+})
 
 
 app.listen(port, () => {
